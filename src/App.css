@@ -1,0 +1,89 @@
+html,
+body,
+#root,
+.app,
+.body {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+
+	padding: 10px;
+
+	border-bottom: 2px solid #ffd31f;
+	background: #fff4ca;
+}
+
+.body {
+	display: flex;
+
+	box-sizing: border-box;
+	height: calc(100% - 57px);
+	padding: 10px;
+
+	background-color: #fff;
+}
+
+.sidebar {
+	display: flex;
+	align-items: center;
+	flex-basis: 120px;
+	justify-content: center;
+
+	max-height: 120px;
+	margin-right: 10px;
+	padding: 10px;
+
+	border: 2px solid #1f73ff;
+	background: #cbdfff;
+}
+
+.sidebar .stats {
+	text-transform: lowercase;
+
+	font-size: 12px;
+}
+
+.content {
+	flex: 1;
+
+	padding: 10px;
+
+	border: 2px solid #8bc34a;
+	background-color: #f1f8e9;
+}
+
+.user-avatar {
+	width: 64px;
+	height: 64px;
+
+	border-radius: 50%;
+}
+
+.user-avatar.small {
+	width: 32px;
+	height: 32px;
+}
+
+.user-stats {
+	width: 100%;
+}
+
+.user-stats > div:first-child {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	margin-bottom: 10px;
+}
